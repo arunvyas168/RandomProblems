@@ -36,7 +36,54 @@ public class WeightJobScheduling {
         jobs.add(new Job(4,6,5));
         Collections.sort(jobs);
         int maxWeight =  weightedJobSchedulingMaximumProfit(jobs);
-        System.out.println("The max weight that i can get is: "+ maxWeight);
+        System.out.println("The max weight that I can get is: "+ maxWeight);
+        int maxWeightNlogN = weightedJobSchedulingMaximumProfitNLogN(jobs);
+        System.out.println("The max weight that I can get is: "+ maxWeightNlogN);
+    }
+
+    /**
+     * This is the binary search util method to find the latest job
+     *       (before current job) that doesn't conflict with current
+     *       job.
+     * @param jobs
+     * @param index
+     * @return
+     */
+    public static int binary_search(List<Job> jobs, int index){
+        int low = 0;
+        int high = index-1;
+        while (low<=high){
+            int mid = low+(high-low)/2;
+            if (jobs.get(mid).endTime<=jobs.get(index).startTime){
+                if(jobs.get(mid+1).endTime<=jobs.get(index).startTime){
+                    low = mid+1;
+                }else {
+                    return mid;
+                }
+            }else {
+                high = mid-1;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * This will solve the weighted scheduling problem in O(nLog(n)) time.
+     * @param jobs
+     * @return
+     */
+    public static int weightedJobSchedulingMaximumProfitNLogN(List<Job> jobs){
+        int[] profit = new int [jobs.size()];
+        profit[0] = jobs.get(0).weight;
+        for(int i=1;i<jobs.size();i++){
+            int includeProfit = jobs.get(i).weight;
+            int index = binary_search(jobs,i);
+            if (index!=-1){
+                includeProfit = includeProfit+profit[index];
+            }
+            profit[i] = Math.max(includeProfit,profit[i-1]);
+        }
+        return profit[profit.length-1];
     }
 
     public static int weightedJobSchedulingMaximumProfit(List<Job> jobs){

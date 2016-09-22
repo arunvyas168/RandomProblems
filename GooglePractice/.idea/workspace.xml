@@ -22,16 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WordBreakProblem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/WordBreakProblem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MinimumNumberOfJump.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MinimumNumberOfJump.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,11 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Recursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2970297">
+            <state vertical-scroll-proportion="0.0">
               <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeightJobScheduling.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/WeightJobScheduling.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.68421054">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/com/company/LongestPalindromicSubSequence.java" />
         <option value="$PROJECT_DIR$/src/com/company/MaxSumIncrSubsequence.java" />
         <option value="$PROJECT_DIR$/src/com/company/MinimumNumberOfJump.java" />
-        <option value="$PROJECT_DIR$/src/com/company/WeightJobScheduling.java" />
         <option value="$PROJECT_DIR$/src/com/company/MaxSumRectMatrix.java" />
         <option value="$PROJECT_DIR$/src/com/company/MinimumEditDistance.java" />
         <option value="$PROJECT_DIR$/src/com/company/LongestStreakInBinaryArray.java" />
@@ -158,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/com/company/LongestIncreasingSubSequence.java" />
         <option value="$PROJECT_DIR$/src/com/company/EggBreaking.java" />
         <option value="$PROJECT_DIR$/src/com/company/Recursion.java" />
+        <option value="$PROJECT_DIR$/src/com/company/WeightJobScheduling.java" />
       </list>
     </option>
   </component>
@@ -191,6 +191,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -230,8 +232,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,7 +240,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DataStructuresAndProblemSolving/DataStructuresAndProblemSolving/PowerSet" />
   </component>
-  <component name="RunManager" selected="Application.Recursion">
+  <component name="RunManager" selected="Application.WeightJobScheduling">
     <configuration default="false" name="WordBreakProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -281,26 +281,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="MaxSumSubseqNonAdjacent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.company.MaxSumSubseqNonAdjacent" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GooglePractice" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="LongestIncreasingSubSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -329,6 +309,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.company.Recursion" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GooglePractice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="WeightJobScheduling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.company.WeightJobScheduling" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -623,17 +623,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.WordBreakProblem" />
       <item index="1" class="java.lang.String" itemvalue="Application.EggBreaking" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaxSumSubseqNonAdjacent" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LongestIncreasingSubSequence" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Recursion" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LongestIncreasingSubSequence" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Recursion" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WeightJobScheduling" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Recursion" />
-        <item index="1" class="java.lang.String" itemvalue="Application.WordBreakProblem" />
-        <item index="2" class="java.lang.String" itemvalue="Application.EggBreaking" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LongestIncreasingSubSequence" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MaxSumSubseqNonAdjacent" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WeightJobScheduling" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Recursion" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WordBreakProblem" />
+        <item index="3" class="java.lang.String" itemvalue="Application.EggBreaking" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LongestIncreasingSubSequence" />
       </list>
     </recent_temporary>
   </component>
@@ -738,6 +738,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/MaxSumRectMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Recursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/EggBreaking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LongestCommonSubSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/WordBreakProblem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1012,14 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/WeightJobScheduling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/WordBreakProblem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1094,8 +1118,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Recursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2970297">
+        <state vertical-scroll-proportion="0.0">
           <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/WeightJobScheduling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68421054">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
