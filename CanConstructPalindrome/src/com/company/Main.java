@@ -1,8 +1,8 @@
 package com.company;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * google-interview-questions
@@ -22,9 +22,36 @@ public class Main {
 
     public static void main(String[] args) {
         String input = "ttaatta";
-        constructPalindrome(input);
+        String longestPalindrome  = constructPalindrome(input);
+        System.out.println("Length of the longest palindrome is: "+longestPalindrome.length()+
+                " and value is: "+longestPalindrome);
     }
 
+    //O(n) Time Complexity
+    public static String constructPalindrome(String input){
+        Set<Character> set = new HashSet<>();
+        String prefix = "";
+        String suffix = "";
+        String mid  = "";
+        for (char c : input.toCharArray()){
+            if (set.contains(c)){
+                prefix += c;
+                suffix+=c;
+                set.remove(c);
+            }else {
+                set.add(c);
+            }
+        }
+
+        if (!set.isEmpty()){
+            mid = mid+set.iterator().next();
+        }
+        return prefix+mid+suffix;
+    }
+
+
+
+    /*
     public static void printPalindrome(int[] count, char[] str){
         String firstHalf = "";
         String lastHalf = "";
@@ -80,6 +107,6 @@ public class Main {
             i++;
         }
         printPalindrome(count,str);
-    }
+    }*/
 
 }
