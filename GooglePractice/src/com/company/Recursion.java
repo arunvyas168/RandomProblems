@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -111,6 +113,27 @@ public class Recursion {
         return value;
     }
 
+    public static void printAllPath(Node root){
+        List<Node> array = new ArrayList<>();
+        printAllPath_util(root,array);
+    }
+    public static void printAllPath_util(Node root, List<Node>array){
+        if (root==null){
+            return;
+        }
+        array.add(root);
+        if (root.left==null && root.right==null){
+            for(Node node : array){
+                System.out.print(node.data+" ");
+            }
+            System.out.println();
+        }else {
+            printAllPath_util(root.left, array);
+            printAllPath_util(root.right, array);
+        }
+        array.remove(root);
+    }
+
     public static void main(String[] args) {
 
         Node root = addNodeBST(null, 60);
@@ -126,14 +149,27 @@ public class Recursion {
         root = addNodeBST(root,37);
         root = addNodeBST(root,38);
         root = addNodeBST(root,36);
+        System.out.println("***************** 1. Print Inorder using recursion **************");
         System.out.println(printInorderString(root));
-        updateSizeRank(root);
-        //printInorder_StackString(root);
         System.out.println();
+
+        System.out.println("***************** 2. Print Inorder using Iteration **************");
+        printInorder_StackString(root);
+        System.out.println();
+
+        System.out.println("***************** 3. Update size of each node **************");
+        updateSizeRank(root);
+        System.out.println();
+
+        System.out.println("***************** 4. Find Kth largest 0>=k>=14 **************");
         for(int i=0;i<14;i++){
             System.out.print(findKthLargest(root,i)+" ");
         }
         System.out.println();
+
+        System.out.println();
+        System.out.println("************ 5. Print Tree Path **********");
+        printAllPath(root);
 
     }
 }
